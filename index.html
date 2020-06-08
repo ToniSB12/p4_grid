@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>grid_moma</title>
+    <style type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700,900&display=swap"rel="stylesheet"> :root {
+            --t1: 1.7em;
+            --t2: 0.9em;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-size: 16px;
+            font-family: 'Fira Sans', sans-serif;
+            background: white;
+        }
+
+        img {
+            width: 100%;
+
+        }
+
+        .container {
+            padding: 2em;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-auto-rows: 250px;
+        }
+
+        .element {
+            background: white;
+        }
+
+        .ele1,
+        .ele4,
+        .ele5 {
+            padding: 1.5em 1.1em;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .ele1 {
+            background: #248d82;
+            grid-column: 2 span;
+        }
+
+        .ele2 {
+            grid-column: 3 span;
+        }
+
+        .ele3 {
+            grid-column: 3 span;
+        }
+
+        .ele4 {
+            background: #ff8e7b;
+            grid-column: 2 span;
+        }
+
+        .ele5 {
+            background: #01b4b4;
+            grid-column: 2 span;
+        }
+
+        .ele6 {
+            grid-column: 3 span;
+        }
+
+        .ele2 img,
+        .ele3 img,
+        .ele6 img {
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h3 {
+            flex-grow: 1;
+            font-size: 1.7em;
+        }
+
+        h4 {
+            font-size: 0.9em;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="element ele1">
+
+            <h3>Sur moderno
+                Journeys of Abstraction—
+                The Patricia Phelps de Cisneros Gift</h3>
+            <h4>Explore the exhibition online
+                moma.org <span></span></h4>
+
+        </div>
+
+        <div class="element ele2">
+
+            <img src="img/Captura%20de%20pantalla%202020-06-04%20a%20las%2016.59.49.png" alt="metzger">
+
+        </div>
+
+        <div class="element ele3">
+
+            <img src="img/Captura%20de%20pantalla%202020-06-04%20a%20las%2017.00.08.png">
+
+        </div>
+
+        <div class="element ele4">
+
+            <h3>Artist’s Choice:
+                Amy Sillman
+                The Shape of Shape
+            </h3>
+            <h4>Explore the exhibition online
+                moma.org<span></span>
+            </h4>
+
+        </div>
+
+        <div class="element ele5">
+
+            <h3>Neri Oxman
+                Material Ecology
+            </h3>
+                <h4>
+                    Explore the exhibition online
+                moma.org
+                </h4> <span></span>
+
+        </div>
+
+        <div class="element ele6">
+
+            <img src="img/Captura%20de%20pantalla%202020-06-04%20a%20las%2017.00.16.png">
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
